@@ -1,5 +1,5 @@
 ---
-title: ahooks - React Hooks Library
+title: React Hooks Library
 hero:
   title: React-UI-library
   desc: 从零搭建react组件库
