@@ -1,5 +1,5 @@
 ---
-title: Foo
+title: abc1
 order: 0
 nav:
   title: normal
@@ -9,11 +9,9 @@ group:
   path: /
 ---
 
-# foo
+# foo1
 
 Demo:
-
-<code title="标题" desc="说明文字" src="./demo" />
 
 ```tsx
 import React from 'react';

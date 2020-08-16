@@ -1,0 +1,7 @@
+{
+  "editor.codeActionsOnSave": null,
+  "key": "ctrl+cmd+=",
+  "command": "wwm.aligncode",
+  "when": "editorTextFocus && !editorReadonly",
+  "editor.comments.ignoreEmptyLines": false
+}
