@@ -16,11 +16,11 @@ jobs:
         with:
           BRANCH: gh-pages
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+          publish_dir: ./docs-dist
       - name: Copy single file to remote
         uses: garygrossgarten/github-action-scp@release
         with:
-          local: docs
+          local: docs-dist
           remote: /home/nginx/html/react
           host: ${{secrets.HOST}}
           username: root
