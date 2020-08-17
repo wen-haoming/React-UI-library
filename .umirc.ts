@@ -10,6 +10,9 @@ export default defineConfig({
   resolve: {
     includes: ['docs', 'packages/src'],
   },
+  history: {
+    type: 'hash',
+  },
   theme: {
     '@c-primary': '#214c7e',
   },
