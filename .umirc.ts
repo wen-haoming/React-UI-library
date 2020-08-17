@@ -6,6 +6,7 @@ export default defineConfig({
   favicon: '/meitan.svg',
   logo: '/meitan.svg',
   outputPath: 'docs-dist',
+  publicPath: '/react/',
   resolve: {
     includes: ['docs', 'packages/src'],
   },
