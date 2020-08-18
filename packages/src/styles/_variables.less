@@ -12,7 +12,7 @@
 @black: #000;
 
 //  基础色
-@blue: #0d6efd;
+@blue: #4091f7;
 @ClassicBlue: #214c7e;
 @indigo: #6610f2;
 @purple: #6f42c1;
@@ -23,6 +23,7 @@
 @green: #52c41a;
 @teal: #20c997;
 @cyan: #17a2b8;
+@base-color: rgba(0, 0, 0, 0.65);
 
 // 功能色
 @primary: @blue;
@@ -42,13 +43,15 @@
   'Liberation Mono', 'Courier New', monospace;
 @font-family-base: @font-family-sans-serif;
 
+@base-border-color: #d9d9d9;
+@base-font-color: @base-color;
+
 // 字体大小
 @font-family-base: 14px;
 @font-size-base: 14px;
 @font-size-lg: @font-size-base * 1.25;
 @font-size-sm: @font-size-base * 0.875;
 @font-size-root: null;
-
 // 字重
 @font-weight-lighter: lighter;
 @font-weight-light: 300;
@@ -154,9 +157,9 @@
 // 边框 和 border radius
 
 @border-width: 1px;
-@border-color: @gray-300;
+@border-color: @base-border-color;
 
-@border-radius: 3.5px;
+@border-radius: 2px;
 @border-radius-lg: 4.2px;
 @border-radius-sm: 2.8px;
 
@@ -169,11 +172,12 @@
 // 按钮
 // 按钮基本属性
 @btn-font-weight: 400;
-@btn-padding-y: 5.25px;
-@btn-padding-x: 10.5px;
+@btn-padding-y: 4px;
+@btn-padding-x: 15px;
 @btn-font-family: @font-family-base;
 @btn-font-size: @font-size-base;
 @btn-line-height: @line-height-base;
+@btn-border-color: lighten(@gray-900, 65%);
 
 //不同大小按钮的 padding 和 font size
 @btn-padding-y-sm: 3.5;

@@ -3,8 +3,8 @@ import { defineConfig } from 'dumi';
 export default defineConfig({
   mode: 'site',
   title: 'React-UI-library',
-  favicon: '/meitan.svg',
-  logo: '/meitan.svg',
+  favicon: '/react/meitan.svg',
+  logo: '/react/meitan.svg',
   outputPath: 'docs-dist',
   publicPath: '/react/',
   resolve: {
@@ -17,7 +17,7 @@ export default defineConfig({
     '@c-primary': '#214c7e',
   },
   navs: [
-    { title: '组件', path: '/components' },
+    { title: '组件', path: '/comp' },
     { title: '色彩设计', path: '/color' },
     { title: 'GitHub', path: 'https://github.com/alibaba/hooks' },
     { title: '更新日志', path: 'https://github.com/alibaba/hooks/releases' },

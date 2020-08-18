@@ -1,0 +1,29 @@
+.button-size(@padding-x,@padding-y,@font-size,@border-radius) {
+  padding: @padding-y @padding-x;
+  font-size: @font-size;
+  border-radius: @border-radius;
+}
+
+.button(
+  @background,
+  @border,
+  @color,
+  @hover-background,
+  @hover-border,
+  @hover-color:lighten(@hover-border,3%),
+) {
+  color: @color;
+  background: @background;
+  border-color: @border;
+  &:hover {
+    color: @hover-color;
+    background: @hover-background;
+    border-color: @hover-border;
+  }
+  &:focus,
+  .focus {
+    color: @hover-color;
+    background: @hover-background;
+    border-color: @hover-border;
+  }
+}

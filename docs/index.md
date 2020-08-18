@@ -8,5 +8,5 @@ hero:
   desc: 从零搭建react组件库
   actions:
     - text: 快速上手
-      link: /components/foo
+      link: /comp/button
 ---
