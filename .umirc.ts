@@ -19,8 +19,14 @@ export default defineConfig({
   navs: [
     { title: '组件', path: '/comp' },
     { title: '色彩设计', path: '/color' },
-    { title: 'GitHub', path: 'https://github.com/alibaba/hooks' },
-    { title: '更新日志', path: 'https://github.com/alibaba/hooks/releases' },
+    {
+      title: 'GitHub',
+      path: 'https://github.com/wen-haoming/React-UI-library',
+    },
+    {
+      title: '更新日志',
+      path: 'https://github.com/wen-haoming/React-UI-library/commits/master',
+    },
   ],
   // more config: https://d.umijs.org/config
 });

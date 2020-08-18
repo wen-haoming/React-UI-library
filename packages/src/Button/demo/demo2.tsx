@@ -12,8 +12,6 @@ const Demo = () => {
         <Button btnType="primary" disabled>
           Primary(disabled)
         </Button>
-      </div>
-      <div className="demo">
         <Button>Default</Button>
         <Button disabled>Default(disabled)</Button>
       </div>
@@ -22,8 +20,6 @@ const Demo = () => {
         <Button btnType="text" disabled>
           Text(disabled)
         </Button>
-      </div>
-      <div className="demo">
         <Button btnType="link">link</Button>
         <Button btnType="link" disabled>
           link(disabled)
@@ -34,6 +30,20 @@ const Demo = () => {
           danger
         </Button>
         <Button danger btnType="primary" disabled>
+          danger(disabled)
+        </Button>
+        <Button danger btnType="dashed">
+          danger
+        </Button>
+        <Button danger btnType="dashed" disabled>
+          danger(disabled)
+        </Button>
+      </div>
+      <div className="demo">
+        <Button danger btnType="text">
+          danger
+        </Button>
+        <Button danger btnType="text" disabled>
           danger(disabled)
         </Button>
       </div>

@@ -14,6 +14,10 @@
   border: @btn-border-width solid @border-color;
   cursor: pointer;
   transition: @btn-transition;
+  transition-property: @btn-transition-property;
+  transition-duration: @btn-transition-duration;
+  transition-timing-function: @btn-transition-timing-function;
+  transition-delay: @btn-transition-delay;
   outline: none;
   &.disabled,
   &[disabled] {
@@ -100,7 +104,7 @@
   }
 }
 
-.btn-lg {
+.btn-large {
   .button-size(
     @btn-padding-x-lg,
     @btn-padding-y-lg,
@@ -109,7 +113,7 @@
   );
 }
 
-.btn-sm {
+.btn-small {
   .button-size(
     @btn-padding-x-sm,
     @btn-padding-y-sm,
@@ -119,5 +123,11 @@
 }
 
 .btn-danger {
-  .button(@white, @red, @red, @white, @red, @red);
+  .button(@white, @red, @red, @white, lighten(@red, 10%), lighten(@red, 10%));
+  &.btn-text {
+    .button(@white, transparent, @red, @white, @white, lighten(@red, 10%));
+  }
+  &.btn-link {
+    .button(@white, transparent, @red, @white, @white, lighten(@red, 10%));
+  }
 }

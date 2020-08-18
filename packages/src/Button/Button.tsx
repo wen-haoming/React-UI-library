@@ -1,11 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-export enum ButtonSize {
-  Large = 'large',
-  Middle = 'middle',
-  Small = 'small',
-}
+export type ButtonSize = 'large' | 'middle' | 'small';
 
 export type ButtonType = 'primary' | 'default' | 'dashed' | 'text' | 'link';
 

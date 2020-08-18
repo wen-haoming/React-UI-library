@@ -205,8 +205,14 @@
 @btn-border-radius-lg: @border-radius-lg;
 @btn-border-radius-sm: @border-radius-sm;
 
-@btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-  border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+// @btn-transition: all 0.15s ease-in-out, background-color 0.15s ease-in-out,
+//   border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+@btn-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+@btn-transition-property: all;
+@btn-transition-duration: 0.3s;
+@btn-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+@btn-transition-delay: 0s;
 
 // menu
 @menu-border-width: @border-width;
