@@ -2,4 +2,4 @@
 
 ## Getting Started
 
-http://www.hwm.zone/react
+http://www.whm.zone/react
