@@ -14,7 +14,9 @@
     "test:coverage": "umi-test --coverage",
     "pub": "lerna publish"
   },
-
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
   "lint-staged": {
     "*.{js,jsx,md,json}": [
       "prettier --write"
