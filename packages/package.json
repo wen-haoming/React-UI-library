@@ -8,8 +8,6 @@
   "unpkg": "dist/mui.js",
   "files": [
     "dist",
-    "lib",
-    "es",
     "package.json",
     "README.md"
   ],
