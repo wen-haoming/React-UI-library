@@ -13,11 +13,7 @@
   vertical-align: middle;
   border: @btn-border-width solid @border-color;
   cursor: pointer;
-  transition: @btn-transition;
-  transition-property: @btn-transition-property;
-  transition-duration: @btn-transition-duration;
-  transition-timing-function: @btn-transition-timing-function;
-  transition-delay: @btn-transition-delay;
+  .transition(@btn-transition,@btn-transition-property,@btn-transition-duration,@btn-transition-timing-function,@btn-transition-delay);
   outline: none;
   &.disabled,
   &[disabled] {

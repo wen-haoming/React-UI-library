@@ -18,7 +18,6 @@ interface BaseButtonProps {
   btnType?: ButtonType;
   children: React.ReactNode;
   href?: string;
-  block?: boolean;
   danger?: boolean;
   shape?: ShapeType;
 }
@@ -38,7 +37,6 @@ export const Button: React.FC<ButtonProps> = props => {
     children,
     href,
     className,
-    block,
     danger,
     shape,
     ...restProps
@@ -68,7 +66,6 @@ export const Button: React.FC<ButtonProps> = props => {
 
 Button.defaultProps = {
   disabled: false,
-  block: false,
   danger: false,
   btnType: 'default',
   shape: ShapeType.Default,

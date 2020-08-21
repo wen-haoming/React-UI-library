@@ -27,3 +27,24 @@
     border-color: @hover-border;
   }
 }
+
+.button-disable(@btns){
+    &.disabled,
+    &[disabled] {
+      cursor: not-allowed;
+      opacity: @btn-disabled-opacity;
+      btns();
+      box-shadow: none;
+      > * {
+        pointer-events: none;
+      }
+    }
+}
+
+.transition(@transition,@transition-property,@transition-duration,@transition-timing-function,@transition-delay){
+  transition: @transition;
+  transition-property: @transition-property;
+  transition-duration: @transition-duration;
+  transition-timing-function: @transition-timing-function;
+  transition-delay: @transition-delay;
+}

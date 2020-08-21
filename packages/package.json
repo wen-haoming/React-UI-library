@@ -1,12 +1,39 @@
 {
   "name": "m-ui",
-  "version": "1.0.0",
-  "description": "",
-  "main": "./index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "0.0.1",
+  "description": "react ui library",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "types": "./es/index.d.js",
+  "unpkg": "dist/mui.js",
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "package.json",
+    "README.md"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.com/"
   },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "less": "^3.12.2",
+    "v-reactive-hooks": "^0.3.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "build": "gulp && webpack --config webpack.config.js",
+    "webpack": "webpack --config webpack.config.js"
+  },
+  "license": "MIT",
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "wen-haoming"
 }
