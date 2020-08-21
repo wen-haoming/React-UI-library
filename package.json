@@ -6,21 +6,17 @@
     "start": "dumi dev",
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
-    "build": "father-build",
+    "build": "lerna run build",
     "deploy": "npm run docs:build && npm run docs:deploy",
     "release": "npm run build && npm publish",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
-    "test:coverage": "umi-test --coverage"
+    "test:coverage": "umi-test --coverage",
+    "pub": "lerna publish"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "typings": "dist/index.d.ts",
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
+
   "lint-staged": {
-    "*.{js,jsx,less,md,json}": [
+    "*.{js,jsx,md,json}": [
       "prettier --write"
     ],
     "*.ts?(x)": [
@@ -34,16 +30,33 @@
     "v-reactive-hooks": "^0.3.0"
   },
   "devDependencies": {
+    "@testing-library/react": "^10.4.8",
+    "@testing-library/react-hooks": "^3.4.1",
     "@types/classnames": "^2.2.10",
+    "@types/vfile-message": "^2.0.0",
     "@umijs/preset-react": "1.x",
     "@umijs/test": "^3.0.5",
     "antd": "^4.5.4",
+    "copy-webpack-plugin": "^6.0.3",
+    "css-loader": "^4.2.1",
+    "del": "^5.1.0",
     "dumi": "^1.0.9",
     "father-build": "^1.17.2",
     "gh-pages": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "lerna": "^3.22.1",
+    "less-loader": "^6.2.0",
     "lint-staged": "^10.0.7",
+    "mini-css-extract-plugin": "^0.10.0",
     "prettier": "^1.19.1",
     "react-copy-to-clipboard": "^5.0.2",
+    "ts-loader": "^8.0.2",
+    "vfile-message": "^2.0.4",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^5.1.2",
     "yorkie": "^2.0.0"
   }
 }
