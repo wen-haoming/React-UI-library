@@ -1,19 +1,16 @@
 {
-  "name": "m-ui",
-  "version": "0.0.2",
+  "name": "m-ui2",
+  "version": "0.0.6",
   "description": "react ui library",
-  "main": "./lib/index.js",
-  "module": "./es/index.js",
-  "types": "./es/index.d.js",
-  "unpkg": "dist/mui.js",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.js",
+  "unpkg": "./dist/u-ui.js",
   "files": [
     "dist",
     "package.json",
     "README.md"
   ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.com/"
-  },
   "peerDependencies": {
     "react": "^16.8.6"
   },

@@ -1,17 +1,23 @@
-
 {
   "compilerOptions": {
     "moduleResolution": "node",
     "strict": true,
     "sourceMap": true,
-    "declaration": true,
+    "declaration": false,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "jsx":"react",
+    "typeRoots": ["node_modules/@types"],
+    "jsx": "react"
   },
-  "exclude": ["node_modules","**/*.test.tsx", "lib", "es", "dist", "**/__tests__", "**/__test__", "**/demo"],
+  "exclude": [
+    "node_modules",
+    "**/*.test.tsx",
+    "lib",
+    "es",
+    "dist",
+    "**/__tests__",
+    "**/__test__",
+    "**/demo"
+  ]
 }
