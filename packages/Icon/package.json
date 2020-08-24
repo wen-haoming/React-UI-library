@@ -1,0 +1,21 @@
+{
+  "name": "mui2icons",
+  "version": "1.0.0",
+  "description": "my icons",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "scripts": {
+    "build:iconfile":"node ./src/script/buildSvgConfig.js && node ./src/script/buildSvgComponent.js ",
+    "build":"gulp"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "keywords": ["mui2"],
+  "author": "wenhaoming",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "insert-css": "^2.0.0"
+  },
+  "license": "ISC"
+}

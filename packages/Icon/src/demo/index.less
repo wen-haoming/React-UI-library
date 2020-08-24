@@ -1,0 +1,44 @@
+.svg-wrap{
+   display: flex;
+   flex-wrap: wrap;
+   list-style:none;
+   >li{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+      position: relative;
+      margin: 10px 10px;
+      width: 16.66%;
+      height: 100px;
+      overflow: hidden;
+      color: #555;
+      text-align: center;
+      list-style: none;
+      background-color: inherit;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.5s;
+      &:hover{
+        color: #fff;
+        background-color: #1890ff;
+        >span{
+          font-size:45px;
+          >svg{
+            fill:#fff;
+          }
+       }
+       }
+      >span{
+         font-size:35px;
+         >svg{
+           transition: all 0.5s;
+           fill:#555555;
+         }
+      }
+      .title{
+        margin-top:12px;
+        font-size: 12px;
+      }
+   }
+}
