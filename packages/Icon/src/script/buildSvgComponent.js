@@ -35,7 +35,7 @@ getIconFileList.forEach(fileName => {
 
   let outputName = fileName
     .replace(/^./, $ => $.toUpperCase())
-    .match(/(.*)Svg/)[1];
+    .replace(/(\w*?)Svg/,($,$1)=>$1);
 
   tempTpl = tpl.replace(/\{\{fileName\}\}/g, fileName);
   tempTpl = tempTpl.replace(/\{\{exportName\}\}/, outputName);

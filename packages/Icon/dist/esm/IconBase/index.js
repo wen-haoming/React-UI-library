@@ -32,15 +32,18 @@ var IconBase = function(props) {
   return React.createElement(
     'span',
     { className: classNames, style: __assign({}, style) },
-    React.createElement('svg', {
-      fill: style === null || style === void 0 ? void 0 : style.color,
-      style: { transform: rotate ? 'rotate(' + rotate + 'deg)' : 'none' },
-      className: svgClassNames,
-      viewBox: '64 64 896 896',
-      width: style.width ? style.width : '1em',
-      height: style.height ? style.height : '1em',
-      dangerouslySetInnerHTML: { __html: svgContent },
-    }),
+    React.createElement(
+      'svg',
+      {
+        fill: style === null || style === void 0 ? void 0 : style.color,
+        style: { transform: rotate ? 'rotate(' + rotate + 'deg)' : 'none' },
+        className: svgClassNames,
+        viewBox: '64 64 896 896',
+        width: style.width ? style.width : '1em',
+        height: style.height ? style.height : '1em',
+      },
+      React.createElement('path', { fill: 'inherit', d: svgContent }),
+    ),
   );
 };
 export default IconBase;

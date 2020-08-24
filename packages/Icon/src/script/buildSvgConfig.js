@@ -27,7 +27,7 @@ if (getSvgName.length) {
           .replace(/^./, $ => $.toUpperCase()) + 'Svg';
 
       let str = `
-export const ${svgName} = '${svgContent.match(/<svg.*?>(.*)<\/svg>/)[1]}'
+export const ${svgName} = '${svgContent.match(/d="(.*?)"/)[1]}'
 `;
       str = str.replace(/fill=".*?"/, `fill="inherit"`);
 

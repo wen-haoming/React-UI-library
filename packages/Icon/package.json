@@ -1,9 +1,10 @@
 {
   "name": "mui2icons",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "my icons",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
+  "files": ["package.json","dist"],
   "scripts": {
     "build:iconfile":"node ./src/script/buildSvgConfig.js && node ./src/script/buildSvgComponent.js ",
     "build":"gulp"

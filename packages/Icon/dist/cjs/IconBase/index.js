@@ -34,15 +34,21 @@ var IconBase = function(props) {
   return react_1['default'].createElement(
     'span',
     { className: classNames, style: __assign({}, style) },
-    react_1['default'].createElement('svg', {
-      fill: style === null || style === void 0 ? void 0 : style.color,
-      style: { transform: rotate ? 'rotate(' + rotate + 'deg)' : 'none' },
-      className: svgClassNames,
-      viewBox: '64 64 896 896',
-      width: style.width ? style.width : '1em',
-      height: style.height ? style.height : '1em',
-      dangerouslySetInnerHTML: { __html: svgContent },
-    }),
+    react_1['default'].createElement(
+      'svg',
+      {
+        fill: style === null || style === void 0 ? void 0 : style.color,
+        style: { transform: rotate ? 'rotate(' + rotate + 'deg)' : 'none' },
+        className: svgClassNames,
+        viewBox: '64 64 896 896',
+        width: style.width ? style.width : '1em',
+        height: style.height ? style.height : '1em',
+      },
+      react_1['default'].createElement('path', {
+        fill: 'inherit',
+        d: svgContent,
+      }),
+    ),
   );
 };
 exports['default'] = IconBase;

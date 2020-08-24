@@ -30,8 +30,9 @@ const IconBase: React.FC<Props> = props => {
         viewBox="64 64 896 896"
         width={style!.width ? style!.width : '1em'}
         height={style!.height ? style!.height : '1em'}
-        dangerouslySetInnerHTML={{ __html: svgContent }}
-      ></svg>
+      >
+        <path fill="inherit" d={svgContent}></path>
+      </svg>
     </span>
   );
 };
