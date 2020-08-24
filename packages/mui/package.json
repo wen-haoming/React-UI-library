@@ -1,6 +1,6 @@
 {
-  "name": "m-ui2",
-  "version": "0.0.6",
+  "name": "mui2",
+  "version": "0.0.7",
   "description": "react ui library",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -25,7 +25,7 @@
     "webpack-cli": "^3.3.12"
   },
   "scripts": {
-    "build": "gulp && webpack --config webpack.config.js",
+    "1": "gulp && webpack --config webpack.config.js",
     "webpack": "webpack --config webpack.config.js"
   },
   "license": "MIT",

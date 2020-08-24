@@ -26,6 +26,10 @@ const config = {
         test: /\.less$/,
         use: [miniCssExtractPlugin.loader, 'css-loader', 'less-loader'],
       },
+      {
+        test: /\.svg$/,
+        use: 'file-loader',
+      },
     ],
   },
   plugins: [

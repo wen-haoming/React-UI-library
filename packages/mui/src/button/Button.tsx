@@ -24,6 +24,7 @@ interface BaseButtonProps {
 
 type NativeButtonProps = BaseButtonProps &
   React.ButtonHTMLAttributes<HTMLElement>;
+
 type AnButtchoronProps = BaseButtonProps &
   React.AnchorHTMLAttributes<HTMLElement>;
 

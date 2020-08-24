@@ -1,5 +1,5 @@
 import React from 'react';
-import { Refresh, Smile, TaskFilling, SelectBold } from '@mui2/icons';
+import { Refresh, Smile, TaskFilling, SelectBold } from 'mui2icons';
 
 export default () => {
   return (

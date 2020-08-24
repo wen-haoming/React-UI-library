@@ -10,3 +10,9 @@ hero:
     - text: 快速上手
       link: /comp/button
 ---
+
+```
+
+$ npm i mui2
+
+```

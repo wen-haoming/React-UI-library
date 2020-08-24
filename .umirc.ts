@@ -8,7 +8,7 @@ export default defineConfig({
   outputPath: 'docs-dist',
   publicPath: '/react/',
   resolve: {
-    includes: ['docs', 'packages/src'],
+    includes: ['docs', 'packages'],
   },
   history: {
     type: 'hash',
@@ -28,5 +28,6 @@ export default defineConfig({
       path: 'https://github.com/wen-haoming/React-UI-library/commits/master',
     },
   ],
+
   // more config: https://d.umijs.org/config
 });
