@@ -5,7 +5,8 @@ nav:
   path: /comp
 group:
   title: 通用
-  path: /
+  path: /normal
+  order: 0
 ---
 
 # Button 按钮

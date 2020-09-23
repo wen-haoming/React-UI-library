@@ -1,8 +1,29 @@
+.jus-flex(@justify-content){
+  display: flex;
+  justify-content:@justify-content;
+  align-items: center;
+}
+
+.reset-component() {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: @text-color;
+  font-size: @font-size-base;
+  font-variant: @font-variant-base;
+  line-height: @line-height-base;
+  list-style: none;
+  font-feature-settings: @font-feature-settings-base;
+}
+
+// ------------------------------------------------------------------------------------------------------------
+// button
 .button-size(@padding-x,@padding-y,@font-size,@border-radius) {
   padding: @padding-y @padding-x;
   font-size: @font-size;
   border-radius: @border-radius;
 }
+
 
 .button(
   @background,
@@ -32,7 +53,7 @@
     &.disabled,
     &[disabled] {
       cursor: not-allowed;
-      opacity: @btn-disabled-opacity;
+      opacity: @m-btn-disabled-opacity;
       btns();
       box-shadow: none;
       > * {
@@ -48,3 +69,8 @@
   transition-timing-function: @transition-timing-function;
   transition-delay: @transition-delay;
 }
+
+// ------------------------------------------------------------------------------------------------------------
+// menu
+
+

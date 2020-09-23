@@ -43,10 +43,10 @@ export const Button: React.FC<ButtonProps> = props => {
     ...restProps
   } = props;
 
-  const classes = classNames('btn', className, {
-    [`btn-${btnType}`]: btnType,
-    [`btn-${size}`]: size,
-    [`btn-danger`]: danger,
+  const classes = classNames('m-btn', className, {
+    [`m-btn-${btnType}`]: btnType,
+    [`m-btn-${size}`]: size,
+    [`m-btn-danger`]: danger,
     disabled: btnType === 'link' && disabled,
   });
 

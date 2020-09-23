@@ -1,24 +1,24 @@
 @import '../styles/_variables.less';
 @import '../styles/_reboot.less';
 
-.btn {
+.m-btn {
   .button(@white, @primary, @base-font-color, @white, @primary);
-  .button-size(@btn-padding-x, @btn-padding-y, @btn-font-size, @border-radius);
+  .button-size(@m-btn-padding-x, @m-btn-padding-y, @m-btn-font-size, @border-radius);
   position: relative;
   display: inline-block;
-  font-weight: @btn-font-weight;
-  line-height: @btn-line-height;
+  font-weight: @m-btn-font-weight;
+  line-height: @m-btn-line-height;
   white-space: nowrap;
   text-align: center;
   vertical-align: middle;
-  border: @btn-border-width solid @border-color;
+  border: @m-btn-border-width solid @border-color;
   cursor: pointer;
-  .transition(@btn-transition,@btn-transition-property,@btn-transition-duration,@btn-transition-timing-function,@btn-transition-delay);
+  .transition(@m-btn-transition,@m-btn-transition-property,@m-btn-transition-duration,@m-btn-transition-timing-function,@m-btn-transition-delay);
   outline: none;
   &.disabled,
   &[disabled] {
     cursor: not-allowed;
-    opacity: @btn-disabled-opacity;
+    opacity: @m-btn-disabled-opacity;
     .button(@gray-200, @gray-300, @gray-600, @gray-200, @gray-300, @gray-600);
     box-shadow: none;
     > * {
@@ -27,7 +27,7 @@
   }
 }
 
-.btn-primary {
+.m-btn-primary {
   .button(
     @primary,
     @primary,
@@ -38,12 +38,12 @@
   );
 }
 
-.btn-dashed {
-  border: @btn-border-width dashed @border-color;
+.m-btn-dashed {
+  border: @m-btn-border-width dashed @border-color;
 }
 
-.btn-text {
-  border: @btn-border-width solid transparent;
+.m-btn-text {
+  border: @m-btn-border-width solid transparent;
   .button(
     @gray-100,
     transparent,
@@ -55,7 +55,7 @@
   &.disabled,
   &[disabled] {
     cursor: not-allowed;
-    opacity: @btn-disabled-opacity;
+    opacity: @m-btn-disabled-opacity;
     .button(
       transparent,
       transparent,
@@ -71,8 +71,8 @@
   }
 }
 
-.btn-link {
-  border: @btn-border-width solid transparent;
+.m-btn-link {
+  border: @m-btn-border-width solid transparent;
   .button(
     @white,
     transparent,
@@ -84,7 +84,7 @@
   &.disabled,
   &[disabled] {
     cursor: not-allowed;
-    opacity: @btn-disabled-opacity;
+    opacity: @m-btn-disabled-opacity;
     .button(
       transparent,
       transparent,
@@ -100,30 +100,30 @@
   }
 }
 
-.btn-large {
+.m-btn-large {
   .button-size(
-    @btn-padding-x-lg,
-    @btn-padding-y-lg,
-    @btn-font-size-lg,
+    @m-btn-padding-x-lg,
+    @m-btn-padding-y-lg,
+    @m-btn-font-size-lg,
     @border-radius-lg
   );
 }
 
-.btn-small {
+.m-btn-small {
   .button-size(
-    @btn-padding-x-sm,
-    @btn-padding-y-sm,
-    @btn-font-size-sm,
+    @m-btn-padding-x-sm,
+    @m-btn-padding-y-sm,
+    @m-btn-font-size-sm,
     @border-radius-sm
   );
 }
 
-.btn-danger {
+.m-btn-danger {
   .button(@white, @red, @red, @white, lighten(@red, 10%), lighten(@red, 10%));
-  &.btn-text {
+  &.m-btn-text {
     .button(@white, transparent, @red, @white, @white, lighten(@red, 10%));
   }
-  &.btn-link {
+  &.m-btn-link {
     .button(@white, transparent, @red, @white, @white, lighten(@red, 10%));
   }
 }

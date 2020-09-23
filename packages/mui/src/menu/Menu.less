@@ -1,0 +1,92 @@
+// 'vertical' | 'horizontal' | 'inline';
+@menu: ~'m-menu';
+@item: ~'m-menu-item';
+@sub: ~'m-submenu';
+
+
+.@{menu}{
+  position: relative;
+  .reset-component();
+  transition: border-color .3s cubic-bezier(.645,.045,.355,1),
+              background .3s cubic-bezier(.645,.045,.355,1),
+              padding .15s cubic-bezier(.645,.045,.355,1);
+  font-size:@font-size-base;
+  color:@menu-submenu-color;
+  &-inline{
+    width:100%;
+    border-right: 1px solid #f0f0f0;
+    border-right: @border-width @border-style-base @menu-border-color;
+   }
+   &-vertical{
+
+   }
+   &-horizontal{
+
+   }
+}
+
+.@{sub}{
+  &-title-inline{
+    .reset-component();
+    color:@menu-submenu-color;
+    padding-bottom: .2px;
+    position: relative;
+    .jus-flex(space-between);
+    margin:4px 0px;
+    transition: @menu-transition;
+    padding: 0 @menu-item-padding-x;
+    height: @submenu-height;
+    line-height: @submenu-line-height;
+    cursor: pointer;
+    &:hover{
+       color:@primary;
+    }
+    // m-submenu-icon
+    .@{sub}-icon{
+        display: block;
+        position: absolute;
+        width:10px;
+        right:10px;
+        top:50%;
+        font-size:10px;
+        &::after{
+          display: block;
+          content: "";
+          position: absolute;
+          width: 6px;
+          height: 1.8px;
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
+          border-radius: 2px;
+          transform: rotate(45deg) translateX(-2px);
+          transition: @menu-transition;
+        }
+        &::before{
+          display: block;
+          content: "";
+          position: absolute;
+          width: 6px;
+          height: 1.8px;
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
+          border-radius: 2px;
+          transform: rotate(-45deg) translateX(2px);
+          transition: @menu-transition;
+        }
+    }
+    &-active{
+      .@{sub}-icon{
+        &::after{
+          transform: rotate(-45deg) translateX(-2px);
+        }
+        &::before{
+          transform: rotate(45deg) translateX(2px);
+      }
+        }
+    }
+  }
+}
+
+.@{item}{
+
+}
+
+

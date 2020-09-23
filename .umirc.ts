@@ -14,7 +14,7 @@ export default defineConfig({
     type: 'hash',
   },
   theme: {
-    '@c-primary': '#214c7e',
+    '@c-primary': '#1890ff',
   },
   navs: [
     { title: '组件', path: '/comp' },

@@ -5,7 +5,7 @@ nav:
   path: /comp
 group:
   title: 通用
-  path: /
+  path: /normal
 ---
 
 # Icon 图标
