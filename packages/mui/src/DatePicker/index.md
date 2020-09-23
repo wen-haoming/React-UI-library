@@ -11,7 +11,7 @@ group:
 
 ## DatePicker
 
-<img width="200" height="250" src="./demo/pic.png"/>
+<img width="300" height="350" src="./demo/pic.png"/>
 
 Demo:
 
